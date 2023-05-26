@@ -1,6 +1,6 @@
 :root {
   --background-color: #e5cacb;
-  --bs-primary-rgb: #DD1D84;
+  --bs-primary-rgb: #dd1d84;
 }
 
 body {
@@ -87,6 +87,17 @@ h6 {
   .py-md-5 {
     padding-top: 0rem !important;
     padding-bottom: 0rem !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .home-title::after {
+    right: -50px;
+    bottom: -30px;
+  }
+  .home-title::before {
+    left: -10px;
+    top: -10px;
   }
 }
 
