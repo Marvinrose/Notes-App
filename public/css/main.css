@@ -1,6 +1,6 @@
 :root {
-  --background-color: #eff0f5;
-  --bs-primary-rgb: #12296c;
+  --background-color: #e5cacb;
+  --bs-primary-rgb: #DD1D84;
 }
 
 body {
@@ -69,6 +69,20 @@ h6 {
   --bs-pagination-active-border-color: var(--bs-primary-rgb);
 }
 
+.home-title::before {
+  content: url("../img/stars.svg");
+  position: absolute;
+  left: -50px;
+  top: -30px;
+}
+
+.home-title::after {
+  content: url("../img/stars.svg");
+  position: absolute;
+  right: -100px;
+  bottom: -60px;
+}
+
 @media (min-width: 768px) {
   .py-md-5 {
     padding-top: 0rem !important;
@@ -76,11 +90,15 @@ h6 {
   }
 }
 
-/* #E5CACB */
-/* #B86048 */
-/* #E1999B */
-/* #026A4A */
-/* #255B39 */
-/* #26563A */
-/* #DA5146 */
-/* #FBF5BC */
+/* #E5CACB good*/
+/* #B86048  nah*/
+/* #E1999B not really*/
+/* #026A4A not bad*/
+/* #255B39 not bad*/
+/* #26563A still green*/
+/* #DA5146 nah*/
+/* #FBF5BC good*/
+/* #0E1B4D just there*/
+/* #DD1D84 too pinky*/
+/* bg color #eff0f5 */
+/* bs-primary-rgb #12296c */
