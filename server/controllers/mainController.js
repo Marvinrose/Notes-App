@@ -8,9 +8,11 @@ exports.homepage = async (req, res) => {
     description: "NodeJS Notes App",
   };
 
-  res.render("index", locals);
+  res.render("index", {
+    locals,
+    layout: "../views/layouts/front-page",
+  });
 };
-
 
 // GET
 
