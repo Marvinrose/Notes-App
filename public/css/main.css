@@ -84,6 +84,10 @@ h6 {
   bottom: -60px;
 }
 
+.notes {
+  font-family: "Rubik Moonrocks", cursive;
+}
+
 @media (min-width: 768px) {
   .py-md-5 {
     padding-top: 0rem !important;

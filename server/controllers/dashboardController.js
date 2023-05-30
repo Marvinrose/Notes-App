@@ -10,8 +10,14 @@ exports.dashboard = async (req, res) => {
     description: "NodeJS Notes App",
   };
 
-  res.render("dashboard/index", {
-    locals,
-    layout: "../views/layouts/dashboard",
-  });
+  try {
+    const notes = await Note.find({});
+    res.render("dashboard/index", {
+      userName: req.user.firstName,
+      locals,
+      notes,
+      layout: "../views/layouts/dashboard",
+    });
+    console.log(notes);
+  } catch (error) {}
 };
