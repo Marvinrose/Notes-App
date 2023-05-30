@@ -1,3 +1,6 @@
+const Note = require("../models/Notes");
+const mongoose = require("mongoose");
+
 // GET
 
 // Aboutpage
