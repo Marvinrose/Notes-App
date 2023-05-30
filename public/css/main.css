@@ -1,6 +1,6 @@
 :root {
-  --background-color: #e5cacb;
-  --bs-primary-rgb: #dd1d84;
+  --background-color: #dfd5c8;
+  --bs-primary-rgb: #12296c;
 }
 
 body {
@@ -74,6 +74,7 @@ h6 {
   position: absolute;
   left: -50px;
   top: -30px;
+  z-index: 2;
 }
 
 .home-title::after {
@@ -113,3 +114,7 @@ h6 {
 /* #DD1D84 too pinky*/
 /* bg color #eff0f5 */
 /* bs-primary-rgb #12296c */
+
+/* #033044 */
+
+/* #FFD400 */
