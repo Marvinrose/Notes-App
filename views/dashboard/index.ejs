@@ -1,5 +1,4 @@
 <div class="container-fluid container-fluid-custom pb-5 mb-5">
-
   <div class="row mb-4">
     <div class="col">
       <h1>Hey, <%= userName %></h1>
@@ -10,60 +9,153 @@
   </div>
 
   <div class="row">
+    <!-- <select
+      id="select01"
+      class="w3-select w3-border"
+      name="option"
+      onchange="createSuggestion()"
+    >
+      <option value="" disabled="" selected="">Colors of the Year</option>
+      <option style="color: #000; background-color: #f0ede5" value="#F0EDE5">
+        2018 Coconut Milk
+      </option>
+      <option style="color: #000; background-color: #c0ab8e" value="#C0AB8E">
+        2018 Warm Sand
+      </option>
+      <option style="color: #000; background-color: #b4b7ba" value="#B4B7BA">
+        2018 Harbor Mist
+      </option>
+      <option style="color: #fff; background-color: #2e4a62" value="#2E4A62">
+        2018 Sailor Blue
+      </option>
+      <option style="color: #000; background-color: #bfd641" value="#BFD641">
+        2018 Lime Punch
+      </option>
+      <option style="color: #fff; background-color: #bc70a4" value="#BC70A4">
+        2018 Spring Crocus
+      </option>
+      <option style="color: #000; background-color: #eadedb" value="#EADEDB">
+        2018 Almost Mauve
+      </option>
+      <option style="color: #fff; background-color: #6b5b95" value="#6B5B95">
+        2018 Ultra Violet
+      </option>
+      <option style="color: #fff; background-color: #6c4f3d" value="#6C4F3D">
+        2018 Emperador
+      </option>
+      <option style="color: #fff; background-color: #00a591" value="#00A591">
+        2018 Arcadia
+      </option>
+      <option style="color: #000; background-color: #ec9787" value="#EC9787">
+        2018 Blooming Dahlia
+      </option>
+      <option style="color: #000; background-color: #dbb1cd" value="#DBB1CD">
+        2018 Pink Lavender
+      </option>
+      <option style="color: #fff; background-color: #944743" value="#944743">
+        2018 Chili Oil
+      </option>
+      <option style="color: #000; background-color: #6f9fd8" value="#6F9FD8">
+        2018 Little Boy Blue
+      </option>
+      <option style="color: #fff; background-color: #e94b3c" value="#E94B3C">
+        2018 Cherry Tomato
+      </option>
+      <option style="color: #000; background-color: #ecdb54" value="#ECDB54">
+        2018 Meadowlark
+      </option>
+      <option style="color: #000; background-color: #95dee3" value="#95dee3">
+        2018 Meerkat
+      </option>
+      <option style="color: #000; background-color: #bcbcbe" value="#BCBCBE">
+        2018 Quiet Gray
+      </option>
+      <option style="color: #000; background-color: #d1b894" value="#D1B894">
+        2018 Almond Buff
+      </option>
+      <option style="color: #000; background-color: #eae6da" value="#EAE6DA">
+        2018 Tofu
+      </option>
+      <option style="color: #fff; background-color: #485167" value="#485167">
+        2018 Sargasso Sea
+      </option>
+      <option style="color: #fff; background-color: #006e6d" value="#006E6D">
+        2018 Quetzal Green
+      </option>
+      <option style="color: #000; background-color: #f1ea7f" value="#F1EA7F">
+        2018 Limelight
+      </option>
+      <option style="color: #000; background-color: #be9ec9" value="#BE9EC9">
+        2018 Crocus Petal
+      </option>
+      <option style="color: #fff; background-color: #e47a2e" value="#E47A2E">
+        2018 Russet Orange
+      </option>
+      <option style="color: #fff; background-color: #766f57" value="#766F57">
+        2018 Martini Olive
+      </option>
+      <option style="color: #000; background-color: #d5ae41" value="#D5AE41">
+        2018 Ceylon Yellow
+      </option>
+      <option style="color: #fff; background-color: #3f69aa" value="#3F69AA">
+        2018 Nebulas Blue
+      </option>
+      <option style="color: #fff; background-color: #bd3d3a" value="#BD3D3A">
+        2018 Valiant Poppy
+      </option>
+      <option style="color: #fff; background-color: #7f4145" value="#7F4145">
+        2018 Red Pear
+      </option>
+      <option style="color: #000; background-color: #cfb095" value="#cfb095">
+        2017 Hazelnut
+      </option>
+      <option style="color: #fff; background-color: #5a7247" value="#5a7247">
+        2017 Kale
+      </option>
+      <option style="color: #fff; background-color: #ce3175" value="#ce3175">
+        2017 Pink Yarrow
+      </option>
+      <option style="color: #000; background-color: #edcdc2" value="#edcdc2">
+        2017 Pale Dogwood
+      </option>
+      <option style="color: #000; background-color: #95dee3" value="#95dee3">
+        2017 Island Paradise
+      </option>
+      <option style="color: #fff; background-color: #f2552c" value="#f2552c">
+        2017 Flame
+      </option>
+      <option style="color: #fff; background-color: #004b8d" value="#004b8d">
+        2017 Lapis Blue
+      </option>
+    </select> -->
     <% if (notes.length > 0) { for(var i=0; i < notes.length; i++) { %>
-      <div class="col-sm-3 mb-4">
-        <div class="card border-primary" style="min-height: 210px">
-          <a href="/dashboard/item/<%= notes[i]._id %>" class="card-body text-decoration-none">
-            <h5 class="card-title"><%= notes[i].title %></h5>
-            <p class="card-text"><%= notes[i].body %></p>
-          </a>
-        </div>
+    <div class="col-sm-3 mb-4">
+      <div class="card border-primary" style="min-height: 210px">
+        <a
+          href="/dashboard/item/<%= notes[i]._id %>"
+          class="card-body text-decoration-none"
+        >
+          <h5 class="card-title"><%= notes[i].title %></h5>
+          <p class="card-text"><%= notes[i].body %></p>
+        </a>
       </div>
-    <%  }} else { %>
-      <div class="row">
-        <div class="col-3">
-          <img src="/img/human-3.svg" alt="Human pointing hand toward a create button">
-        </div>
-        <div class="col mt-md-4">
-          <h2>Okay...</h2>
-          <h4>Let's start with your first note!<br/><br/>
-            <a href="/dashboard/add">Create one!</a>
-          </h4>
-        </div>
+    </div>
+    <% }} else { %>
+    <div class="row">
+      <div class="col-3">
+        <img
+          src="/img/human-3.svg"
+          alt="Human pointing hand toward a create button"
+        />
       </div>
+      <div class="col mt-md-4">
+        <h2>Okay...</h2>
+        <h4>
+          Let's start with your first note!<br /><br />
+          <a href="/dashboard/add">Create one!</a>
+        </h4>
+      </div>
+    </div>
     <% } %>
   </div>
-
-  <% if(notes.length > 0) { %>
-    <nav aria-label="Page navigation example">
-      <ul class="pagination justify-content-center mt-5">
-        <% if(current == 1) { %>
-          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-        <% } else { %>
-          <li class="page-item"><a class="page-link" href="/dashboard">First</a></li>
-        <% }  %>
-        <% var i = (Number(current) > 5 ? Number(current) - 4 : 1) %>
-        <% if (i !== 1 ) { %>
-          <li class="page-item"><a class="page-link" href="#">...</a></li>
-        <% } %>
-        <% for (; i <= (Number(current) + 4) && i <= pages; i++) { %>
-          <% if(i == current ) { %>
-            <li class="page-item"><a class="page-link" href="#"><%= i %></a></li>
-          <% } else { %>
-            <li class="page-item"><a class="page-link" href="/dashboard/?page=<%= i %>"><%= i %></a></li>
-          <% } %>
-          <% if(i == Number(current) + 4 && i < pages) { %>
-            <li class="page-item"><a class="page-link" href="#">...</a></li>
-          <% } %>
-        <% } %>
-        <% if (current == pages) { %>
-            <li class="page-item disabled"><a class="page-link">Last</a></li>
-        <% } else { %>
-            <li class="page-item"><a href="/dashboard/?page=<%= pages %>" class="page-link">Last</a></li>
-        <% } %>
-      </ul>
-    </nav>
-
-  <% } %>
-
 </div>
