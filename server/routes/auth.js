@@ -3,6 +3,8 @@ const router = express.Router();
 const passport = require("passport");
 const User = require("../models/User");
 
+// just testing my google auth
+
 const GoogleStrategy = require("passport-google-oauth20").Strategy;
 
 passport.use(
