@@ -84,6 +84,18 @@ h6 {
   bottom: -60px;
 }
 
+@media (max-width: 768px) {
+  .home-title::before {
+    content: url("../img/stars.svg");
+    display: none;
+  }
+
+  .home-title::after {
+    content: url("../img/stars.svg");
+    display: none;
+  }
+}
+
 .notes {
   font-family: "Rubik Moonrocks", cursive;
 }
