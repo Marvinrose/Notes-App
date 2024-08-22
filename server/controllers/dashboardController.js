@@ -106,7 +106,6 @@ exports.dashboardSearchSubmit = async (req, res) => {
   }
 };
 
-
 /**
  * GET /
  * View Specific Note
@@ -140,6 +139,7 @@ exports.dashboardUpdateNote = async (req, res) => {
     res.redirect("/dashboard");
   } catch (error) {
     console.log(error);
+    res.status(500).send("Error updating note");
   }
 };
 
@@ -155,4 +155,3 @@ exports.dashboardDeleteNote = async (req, res) => {
     console.log(error);
   }
 };
-

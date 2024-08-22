@@ -16,6 +16,9 @@ const app = express();
 
 const port = 8080 || process.env.PORT;
 
+const methodOverride = require("method-override");
+
+
 app.use(
   session({
     secret: "keyboard cat",
@@ -41,6 +44,9 @@ app.use(express.json());
 
 // static files
 app.use(express.static("public"));
+
+// Use method override with query string, e.g., ?_method=PUT
+app.use(methodOverride("_method"));
 
 // templating engine
 app.use(expressLayouts);
